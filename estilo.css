@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family= Roboto :ital,wght@1,100 & display=swap');
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-size: 100%;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        
+    }
+
+    nav,ul{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+        cursor: pointer;
+        opacity: 0.9;
+    }
+    a:hover{
+        opacity: 1;
+    }
+
+    /* header */
+
+    header{
+        background-color: rgb(0, 0, 0) ;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #logo{
+        width: 130px;
+        padding-left: 20px;
+    }
+
+  header > nav {
+    display: flex;
+   
+  }
+
+  li > a{
+    padding-left: 10px;
+    color: white;
+  }
+
+  /* @media screen and (max-width: 700px) {
+    header{
+        flex-direction: column;
+    }
+  } */
+
+  /* hero */
+
+  .hero{
+    background-image: url(img/fundo01.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .hero > h3{
+    margin-bottom: 20px;
+  }
+
+  .hero > a{
+    background-color: white;
+    border-radius: 4px;
+   color: black;
+    padding: 20px 40px 20px 40px ;
+  }
+
+  .conheca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px 100px 50px;
+    text-align: center;
+  }
+
+  .conheca > h3{
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  .conheca > p{
+   max-width: 800px;
+   margin-bottom: 35px;
+
+  }
+
+  .conheca > hr{
+   width: 200px;
+   height: 2px;
+   background-color: black;
+    margin-bottom: 70px;
+   
+   }
+
+   .conheca > .grid{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   .grid > li{
+    height: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+   }
+
+ .small{
+  flex-basis: 40%;
+ }
+
+ .large{
+  flex-basis: 60%;
+ }
+
+ /* características */
+ .carac{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px 100px 50px;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(  to left, rgb(53, 51, 205,1), rgb(0, 0, 0));
+
+
+}
+
+.carac > h3{
+  font-size: 2em;
+  margin-bottom: 10px;
+ 
+}
+
+.carac > p{
+ max-width: 800px;
+ margin-bottom: 35px;
+
+}
+
+.carac > hr{
+ width: 200px;
+ height: 2px;
+ background-color: black;
+  margin-bottom: 70px;
+ 
+ }
+
+ .carac> .grid{
+    width: 100%;
+    display: flex;
+    
+ }
+
+ .carac > .grid > li{
+  padding: 0px 30px ;
+  text-align: center;
+
+ }
+
+
+ .carac > .grid > li > i{
+  color: dodgerblue;
+ }
+
+ .espaco{
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+ }
+
+ 
+/* newsletter */
+  .newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px 100px 50px;
+    text-align: center;
+  }
+
+  .newsletter> h3{
+    font-size: 2em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  
+  .newsletter> p{
+   max-width: 800px;
+   margin-bottom: 35px;
+  
+  }
+  
+  .newsletter > hr{
+   width: 200px;
+   height: 2px;
+   background-color: black;
+    margin-bottom: 70px;
+   
+   }
+
+    form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width:800px ;
+   }
+
+   form > input{
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 4px ;
+    margin-right: 15px;
+   }
+
+   button{
+    padding: 15px;
+    text-transform: uppercase;
+    background-color: rgb(53, 51, 205,1);
+    color: aliceblue;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    
+   }
+
+ /* midiascreen */
+
+footer{
+  text-align: center;
+  background-color: black;
+  color: aliceblue;
+  padding: 5px;
+}
+
+ @media screen and (max-width: 850px){
+  .small , .large{
+    flex-basis: 100%;
+   }
+
+   .carac> .grid{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+ }
+ }
+
+
+ @media screen and (max-width: 700px){
+  .small , .large{
+    flex-basis: 100%;
+   }
+   .newsletter > form > input{
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    
+   }
+
+ }
+
+ 
